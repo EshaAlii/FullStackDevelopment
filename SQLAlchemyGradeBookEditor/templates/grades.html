@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Create our webpage heading and link our stylesheet + js -->
+<head>
+    <title>Grades</title>
+    <link rel = "stylesheet" href = "static/grades.css">
+    <script src = 'static/js/grades.js'> </script>
+</head>
+
+<!-- Once the page/body loads we'll immediately get the current grades from backend -->
+<body onload = "getGrades()">
+
+    <!-- Create a header to inform the User what this site is to be used for -->
+    <h2>GradeBook Editor</h2>
+
+    <!-- Create the area where a User can search for a student -->
+    <hr> 
+    <h3> Search for a student's grade: </h3>
+    <input id="search" placeholder="Search Student">
+    <button type="button" id = "search_button">Search</button>
+    <hr> 
+
+    <!-- Create the area where we will add a new student -->
+    <h3> Add a new student: </h3> 
+    <input id = "add_name" placeholder="Student Name">
+    <input id = "add_grade" placeholder = "Student Grade">
+    <button type="button" onclick = "addStudent()">Add</button>
+    <hr> 
+
+    <!-- Create the area where our grades + student names will be contained -->
+    <div id="grade-container">
+          <div id="grades"></div>
+    </div>
+
+</body>
+
+</html>
