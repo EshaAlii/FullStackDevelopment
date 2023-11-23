@@ -1,0 +1,231 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #3b353a;
+    text-align: center;
+    color: #fcf4f4;
+}
+
+/* navbar styling */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(36, 30, 35);
+    position: sticky;
+    top: 0;
+    height: 70px;
+}
+
+/* navbar hover animation */
+
+nav .navul li a{
+    text-decoration: none;
+    color: #fcf4f4;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav .navul li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: rgb(229, 166, 39, 0.5);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+nav .navul li a:hover{
+    color: #e5a627;
+}
+
+nav .navul li a:hover::after {
+    width: 100%;
+}
+
+/* navbar text styling */
+@font-face {
+    font-family: Silkscreen;
+    src: url(slkscr.ttf);
+}
+nav a{
+    color: #e5a627;
+    letter-spacing: 1 px;
+    text-decoration: none;
+    font-family: Silkscreen;
+    font-style: bold;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* spacing for navbar elements */
+.navul {
+    list-style: none;
+}
+.navul li {
+    display: inline-block;
+}
+.navul li a{
+    color: #fcf4f4;
+    font-size: 20px;
+}
+
+/* header styling */
+h1 {
+    color: #fcf4f4;
+    font-family: Silkscreen;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* paragraph/text body styling */
+p{
+    color: #fcf4f4;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:inherit;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* styling for images */
+.homeimg{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+
+.fullsize{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.tkl{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.switchimg{
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* styling for images side by side in sizes page */
+.column {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-collapse: collapse;
+}
+
+/* styling for size table in sizes page */
+table, th, td{
+    border: 2px solid white;
+    padding: 5px;
+    margin: auto;
+}
+
+.tableimg{
+    max-width: 100%;
+}
+
+th{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fcf4f4;
+    font-size: 20px;
+}
+
+td{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fcf4f4;
+    font-size: 20px;
+}
+
+tr{
+    margin-left: 40px;
+    margin-right: 40px;
+    flex: 1;
+    text-align: center;
+}
+
+
+/* styling for video */
+.vidcontain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yt1{
+    width: 640px;
+    height: 360px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* image side by side adjustment */
+.side{
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.side1{
+    display: block;
+    max-width: 80%;
+    max-height: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* unordered list styling */
+.keylist {
+    list-style:disc;
+    margin-left: 60px;
+}
+
+.keylista{
+    font-family: 'Courier New', Courier, monospace;
+    color:  white;
+    font-size: 23px;
+    font-style:bold;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.keylist li {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fadea7;
+    font-size: 23px;
+}
