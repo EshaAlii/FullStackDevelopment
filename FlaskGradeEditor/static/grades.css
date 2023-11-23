@@ -1,0 +1,71 @@
+
+/* Body Styling */
+body{
+  color: rgb(255, 251, 236);
+  font-family:'Courier New', Courier, monospace;
+  background: rgb(107, 91, 108);
+}
+
+/* Header Styling */
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  border-color: white !important;
+  color: white;
+  width: 100%;
+}
+  
+/* Table header + Table data styling */
+th, td {
+  border: 1px solid #f9ebfe;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table header Styling */
+th {
+  background-color: #4d4350;
+}
+  
+/* Table row Styling */
+tr {
+  background-color: #947b9c;
+}
+
+/* Button Styling */
+button {
+  background-color: #523d53; 
+  color: #df9e25;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2a1f2a;
+}
+
+/* Input Field Styling */
+input{
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+  background:#2a1f2a;
+  border-radius: 5px;
+  height: 25px;
+  border-color: white;
+}
+
+
+
+
