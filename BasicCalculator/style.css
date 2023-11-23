@@ -1,0 +1,105 @@
+
+/* Calculator font size styling */
+html {
+  font-size: 175%;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* Page  + Calculator font styling */
+body {
+  align-items: center;
+  margin: auto;
+  background-color: #3b353a;
+  display: flex;
+  height: 100vh;
+  max-height: auto;
+  max-width: auto;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Calculator styling */
+.calculator {
+  border-radius: 8px;
+  background: #2c021a;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  max-width: auto;
+  overflow: hidden;
+}
+
+/* Calculator display styling  */
+.display {
+  background-color: #332e2e;
+  color: #e5a627;
+  font-size: 1.7em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+/* Calculator keys/grid background styling */
+.keys {
+  background-color: #372a39;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Calculator keys styling */
+.keys > * {
+  background-color: #5e525c;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+/* Calculator keys depression styling */
+.keys > *:active::before,
+.keys > .is-depressed::before {
+  background-color: rgb(214, 26, 154);
+  bottom: 0;
+  box-shadow:  rgb(94, 5, 79);
+  content: "";
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* Buttons styling (for all keys) */
+button {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+  text-align: left;
+  color: white;
+}
+
+/* Operator buttons styling */
+.operator {
+  background-color: #e5a627;
+  color: #5e525c;
+}
+
+/* Equal button styling */
+.equal {
+  background-color: #e5a627;
+  color: #5e525c;
+}
+
+/* Clear button styling */
+.clear{
+  background-color: #8c7545;
+  color: #efe2ed;
+  grid-column: 1 / span 4;
+  grid-row: 5;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+
+        <!-- Title of HTML page -->
+        <title> Calculator </title>
+        
+        <!-- Reference our style sheet  -->
+        <link href = "style.css" rel = "stylesheet" type = "text/css"/>
+
+        <!-- Reference our JS -->
+        <script src = "script.js" type = "text/javascript"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- Calculator Container -->
+        <div class = "calculator">
+
+            <!-- Display Container -->
+            <div class = "display"> 0 </div>
+
+            <!-- Keys Container -->
+            <div class = "keys">
+
+                <!-- First row -->
+                <button> 7 </button>
+                <button> 8 </button>
+                <button> 9 </button>
+                <button class = "operator" data-action = "add"> + </button>
+
+                <!-- Second row -->
+                <button> 4 </button>
+                <button> 5 </button>
+                <button> 6 </button>
+                <button class = "operator" data-action = "subtract"> - </button>
+
+                <!-- Third row -->
+                <button> 1 </button>
+                <button> 2 </button>
+                <button> 3 </button>
+                <button class = "operator" data-action = "multiply"> &times; </button>
+
+                <!-- Fourth row -->
+                <button> 0 </button>
+                <button data-action="decimal">.</button>
+                <button class="equal" data-action = "calculate"> = </button>
+                <button class = "operator" data-action = "divide"> ÷ </button>
+
+                <!-- Fifth row/Clear button -->
+                <button class = "clear" data-action="clear"> C</button>
+
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>
