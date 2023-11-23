@@ -1,0 +1,91 @@
+/* App.css */
+
+/* html styling */
+html {
+  font-size: 175%;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* Page/body styling */
+body {
+  align-items: center;
+  margin: auto;
+  background-color: #3b353a;
+  display: flex;
+  height: 100vh;
+  max-height: auto;
+  max-width: auto;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* Calculator Container styling */
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #312b2b;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+/* Display Styling */
+.display {
+  grid-column: span 4;
+  background-color: #b7a9b3;
+  color: #edc8ee !important;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px !important;
+}
+
+/* Operator Button Styling */
+.operator {
+  background-color: #e5a627 !important;
+  color: #5e525c !important;
+  border-color: #ccc !important;
+  border-radius: 5px !important;
+}
+
+/* Equals Button Styling */
+.equal {
+  background-color: #bc9b5a !important;
+  color: #5e525c !important;
+  border-color: #ccc !important;
+  border-radius: 5px !important;
+}
+
+/* Clear Button Styling */
+.clear {
+  background-color: #8c7545 !important;
+  color: #efe2ed !important;
+  border-color: #ccc !important;
+  border-radius: 5px !important;
+  width: 100%;
+}
+
+/* Number Button Styling */
+.num{
+  background-color: #5e525c !important;
+  color: #f7e4f5 !important;
+  border-color: #ccc !important;
+  border-radius: 5px !important;
+}
+
+/* Active Operator/Operator Depression Styling */
+.operator.active {
+  background-color: #cf7316 !important;
+  color: #fff4de !important;
+  border-color: #ccc !important;
+}
+
