@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!--Tab Name -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="https://kit.fontawesome.com/182976f003.js" crossorigin="anonymous"></script>
+  <title>Teacher Portal</title>
+
+</head>
+
+<body>
+<!-- Navigation bar -->
+<div class="nav" style="padding-top: 580px;">
+  <div class="welcome">
+    <p class="thick">Welcome, Professor {{teacher.teacherName}}</p>
+  </div>
+  <li><a href="{{url_for('logout')}}"><i class="fa-solid fa-door-open fa-lg"></i><br></br>Logout</a></li>
+</div>
+
+<!--Intended to tell users about what courses they teach -->
+<div class="main">
+
+<!-- Table for Course Info, with clickable Courses -->
+<table>
+  <tr>
+    <tr>
+      <th colspan="4">Courses</th>
+    </tr>
+    <th>Course Name</th>
+    <th>Teacher</th> 
+    <th>Time</th>
+    <th>Enrolled Students</th>
+  </tr>
+  
+  {% for course in courses %}
+  <tr>
+    <td><a href="{{ url_for('teacher_all', course_id=course.id) }}">{{ course.courseName }}</a></td>
+    <td>{{ course.teacher.teacherName }}</td>
+    <td>{{ course.time }}</td> 
+    <td>{{ course.enrollments|length }} / {{ course.capacity }}</td>
+  </tr>
+  {% endfor %}
+  
+</table>
+
+</div>
+</body>
+</html>
